@@ -30,17 +30,72 @@ html{
     margin: 0 auto;
 }
 
-
-
-h1{
-    margin: 0;
-    color: #bdc3c7;
-    font-size: 200%;
-    font-weight: 350;
-    text-transform: uppercase;
-    word-spacing: 4px;
+section{
+    padding: 80px;
 }
 
+.box{
+    padding: 1%;
+}
+
+/* ICONS */
+
+
+.icon{
+    font-size: 200%;
+    display: block;
+    color: #20c933;
+    margin-bottom: 10px;
+}
+
+/* HEADINGS */
+
+h1, h2, h3 {
+    font-weight: 350;
+    text-transform: uppercase;
+}
+
+h1{
+    color: #bdc3c7;
+    margin: 0;
+    font-size: 200%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3{
+    font-size: 110%;
+    word-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+h2:after{
+    display:block;
+    height: 2px;
+    background-color: #d59a44;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+
+/* PARAGRAPHS */
+
+
+.o-nama-glavni-tekst {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
 
 /*---------------------------------------------*/
 /* HEADER */
@@ -102,7 +157,6 @@ header{
     border-bottom: 2px solid #d59a44
 }
 
-
 .header-title {
     display: flex;
     justify-content: center;
@@ -157,4 +211,16 @@ header{
 .card__picture--1 {
     background-image: url(../img/karta_pica/kafa.jpg);
     background-blend-mode: screen;
+}
+/*---------------------------------------------*/
+/* FEATURES */
+/*---------------------------------------------*/
+
+.logo-features{
+    height: 30px;
+    width: 30px;
+    float:center;
+    border-radius: 50%;
+    margin-top: 10px;
+    color: yellow;
 }
