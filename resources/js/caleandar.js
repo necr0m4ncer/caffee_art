@@ -299,15 +299,14 @@ function caleandar(el, data, settings){
 }
 
 var events = [
-    {'Date': new Date(2020, 8, 7), 'Title': 'Doctor appointment at 3:25pm.', 'Link': 'https://www.youtube.com/watch?v=1b0v46Biwa8&t=34s'},
-    {'Date': new Date(2016, 6, 18), 'Title': 'New Garfield movie comes out!', 'Link': 'https://garfield.com'},
-    {'Date': new Date(2016, 6, 27), 'Title': '25 year anniversary', 'Link': 'https://www.google.com.au/#q=anniversary+gifts'},
+    {'Date': new Date(2020, 8, 24), 'Title': 'Milinov 28i rodjendan', 'Link': 'https://www.youtube.com/watch?v=_Kgaxzox2Ik&ab_channel=GrandProduction'},
+    {'Date': new Date(2020, 8, 25), 'Title': 'Dj Laki', 'Link': 'https://www.youtube.com/watch?v=_Kgaxzox2Ik&ab_channel=GrandProduction'},
 ];
 
 var settings = {
-    Color: 'red',
-    LinkColor: 'black',
-    NavShow: true,
+    Color: '#d59a44',
+    LinkColor: 'd59a44',
+    NavShow: false,
     NavVertical: false,
     NavLocation: '',
     DateTimeShow: true,
