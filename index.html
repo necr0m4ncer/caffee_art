@@ -4,45 +4,43 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">
-        
-        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;1,300&display=swap" rel="stylesheet">    
         <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" data-auto-replace-svg="nest"></script>
         <title> Caffe Bar Art </title>
-    
-        
     </head>
     <body>
-        <header>
+        <header id="home">
             <nav>
                 <div class="row">
                     <img src="resources/img/art_logo.jpg" class="logo">
-                    <ul class="main-nav">
-                        <li><a href="#">Početna </a></li>
-                        <li><a href="#">O nama </a></li>
-                        <li><a href="#">Kalendar dešavanja </a></li>
-                        <li><a href="#">Karta pića </a></li>
-                        <li><a href="#">Kontakt </a></li>
-                    </ul>
+                    <div class="nav-containter">
+                        <ul class="main-nav">
+                            <li><a href="#home">Početna </a></li>
+                            <li><a href="#o-nama">O nama </a></li>
+                            <li><a href="#kalendar">Kalendar dešavanja </a></li>
+                            <li><a href="#menu">Karta pića </a></li>
+                            <li><a href="#kontakt">Kontakt </a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
-            <div class="header-text-box">
+            <div class="header-text-box js--wp-3">
                 <h1>Caffe Bar Art </h1>
                 <div class="header-text-subbox">
                     <a>
-                    KuCa dobre kafe i joS bolje atmosfere.
+                    Kuća dobre kafe i još bolje atmosfere.
                     </a>
                 </div>
             </div>
         </header>
-        <section class="o-nama-naslov">
-            <div class="row">
+        <section class="o-nama-naslov js-o-nama-naslov" id="o-nama">
+            <div class="row js--wp-1">
                 <h2> O nama </h2>
                 <p class="o-nama-glavni-tekst">
                 Kafić koji uspešno posluje dugi niz godina u vlasništvu porodice Milinović. Iz godine u godinu rastemo, širimo se i pružamo žiteljima Žitišta i okolnih mesta prijatan ugođaj za kafu, ili večernje druženje.
                 </p>
             </div>
-            <div class="row">
+            <div class="row  js--wp-2">
                 <div class="col span-1-of-4 box">
                     <div class="icon-container">
                         <i class="fab fa-itunes-note fa-2x" style="color:#d59a44"></i>
@@ -52,19 +50,25 @@
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <ion-icon name="beer-outline" class="icon"></ion-icon>
+                    <div class="icon-container">
+                        <i class="fas fa-beer fa-2x" style="color:#d59a44"></i>
+                    </div>
                     <h3> Piva </h3>
                     <p>  Veliki izbor piva iz Jelen grupacije, neće ostaviti nikoga žednim. Obratite pažnju na naše akcije povodom sportskih događaja, popićete Stelu, Staropramen ili Barvariu ispod cene. 
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <ion-icon name="wine-outline" class="icon"></ion-icon>
+                    <div class="icon-container">
+                        <i class="fas fa-wine-glass-alt fa-2x" style="color:#d59a44"></i>
+                    </div>
                     <h3> Vina </h3>
                     <p>  Vina Zvonka Bogdana zarumeniće i najbleđa lica. Ako vam je subotička vinarija van palete ukusa, uvek možete probati nešto od BlaBla vina.
                     </p>
                 </div>
                 <div class="col span-1-of-4 box">
-                    <ion-icon name="cafe-outline" class="icon"></ion-icon>
+                    <div class="icon-container">
+                        <i class="fas fa-coffee fa-2x" style="color:#d59a44"></i>
+                    </div>
                     <h3> Kafa </h3>
                     <p>  Naša Housbrandt kafa, sa svojim specifičnim ukusom daće Vam dodatni nalet energije, da prebrodite bilo kakvu prepreku koja Vas je taj dan snašla.
                     </p>
@@ -117,11 +121,16 @@
                 </li>
             </ul>
         </section>
-        <section>
-            <div id="caleandar">
+        <section class="section-calendar" id="kalendar">
+            <div class="calendar-container">
+                <div id="caleandar">
+                </div>
+                <p class="text-calendar">
+                    U našem kalendaru se možete informisati o predstojećim događajima koji Vas očekuju. Ne čekajte, već rezervišite sto na broj telefona 0612003932.
+                </p>
             </div>
         </section>
-        <section class="section-menu">
+        <section class="section-menu" id="menu">
             <div class="header-title">
                 <h2>Karta pica</h2>
             </div>
@@ -225,7 +234,20 @@
                 </div>
             </div>
         </section>
+        <section id="kontakt">
+            <div>
+                Kontakt
+            </div>
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=caffe%20aret%20zitiste&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div>
+        </section>
+
     </body>
-</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="./vendors/js/jquery.waypoints.js"></script>
+<link rel="stylesheet" href="./vendors/css/animate.css">
 <script type="text/javascript" src="./resources/js/caleandar.js"></script>
 <link rel="stylesheet" href="./vendors/css/theme3.css">
+<script src="./resources/js/script.js"></script>
+
+</html>
+

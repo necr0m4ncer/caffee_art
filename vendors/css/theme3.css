@@ -1,8 +1,9 @@
 .cld-main{
+  font-weight: 350; 
   width: 660px;
 }
 .cld-main a{
-  color: #7B00FF;
+  color: #d59a44;
 }
   .cld-datetime{
     position: relative;
@@ -29,7 +30,7 @@
     cursor: pointer;
   }
   .cld-nav:hover svg{
-      fill: #666;
+      fill: #d59a44;
   }
   .cld-rwd{
     float: left;
@@ -56,14 +57,14 @@
     margin: 0;
     padding: 5px;
     height: 66px;
-    border: 1px solid #ddd;
+    border: 1px solid #5c4421;
     overflow-y: auto;
   }
   .cld-day.clickable:hover{
     cursor: pointer;
   }
   .cld-day.today{
-    border: 1px solid #7B00FF;
+    border: 3px solid #f7b14b;
   }
   .cld-day.disableDay{
     opacity: 0.5;
@@ -76,19 +77,20 @@
       text-align: left;
     }
       .cld-title{
+        font-weight: bold;    
         font-size: 10px;
         display: block;
         margin: 0;
         font-weight: normal;
       }
       .cld-day:hover{
-        background: #eee;
+        background: #5c4421;
       }
       .cld-number.eventday{
         font-weight: bold;
       }
       .cld-number.eventday:hover{
-        background: #eee;
+        background: #5c4421;
       }
       .today .cld-number.eventday:hover{
       }
